@@ -1,0 +1,27 @@
+.buttonContainer {
+    display: inline-block;
+}
+
+.button {
+    font-weight: 600;
+    border: var(--border-width) solid var(--black);
+    outline: 0;
+    padding: 1.5rem 3rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.08rem;
+    background-color: var(--primary-background);
+    border-radius: 0.35rem;
+    position: relative;
+    cursor: pointer;
+    transition: all var(--transition) ease-in-out;
+    box-shadow: 5px 5px 0 var(--black);
+}
+
+/* Hover Effect */
+.button:hover {
+    background-color: var(--black);
+    color: var(--primary-background);
+    transform: translate(var(--offset), var(--offset));
+    border: var(--border-width) solid var(--transparent);
+    box-shadow: 5px 5px 0 var(--transparent);
+}

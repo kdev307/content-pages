@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Aladin&display=swap");
+
+.heroContainer {
+    display: flex;
+    /* flex-direction: row-reverse; */
+    align-items: end;
+    justify-content: center;
+    background-color: var(--primary-background);
+    padding: 10rem 2rem 10rem 8rem;
+}
+
+.heroText {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 1rem;
+    padding-left: 30rem;
+}
+
+.tag {
+    color: var(--text-accent);
+    font-size: 1.5rem;
+}
+
+.heroTitleContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.heroTitle {
+    font-size: 7.2rem;
+    font-family: "Aladin", "cursive";
+}
+
+.heroMessage {
+    font-size: 2rem;
+    width: 60%;
+    text-align: justify;
+}
+
+.imageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+}
+
+.block {
+    width: 90%;
+    /* height: 25%; */
+    background-color: var(--text-accent);
+    padding: 6rem;
+}

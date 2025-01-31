@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+:root {
+    --primary-background: #fcf1e2;
+    --secondary-background: #c0c0c0;
+    --white: #fff;
+    --black: #000;
+    --text-secondary: #8e8e8e;
+    --text-accent: #d44;
+    --transparent: transparent;
+
+    --border-width: 2px;
+    --offset: 0.5rem;
+    --transition: 0.3s;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--text-primary);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Helvetica Neue", sans-serif;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
