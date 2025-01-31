@@ -1,0 +1,76 @@
+.container {
+    padding: 4rem 20rem;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+    margin-bottom: 10rem;
+    padding: 0 20rem;
+}
+
+.title {
+    font-size: 3.2rem;
+    text-transform: capitalize;
+    width: 120%;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.4rem;
+}
+
+.message {
+    font-size: 1.8rem;
+    font-weight: 300;
+    /* width: 150%; */
+    letter-spacing: 0.2rem;
+    line-height: 2.4rem;
+}
+
+.slider {
+    padding: 2rem;
+}
+
+.cards:nth-child(3n) {
+    background-color: var(--black);
+    color: var(--white);
+}
+.card {
+    background-color: var(--white);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+    gap: 2rem;
+    border: var(--border-width) solid var(--black);
+    border-radius: 0.4rem;
+    padding: 4rem 2rem;
+    /* width: 200%; */
+    height: 40rem;
+    width: 80%;
+    text-align: center;
+    transition: all var(--transition) ease-in;
+    margin: 1rem;
+}
+
+.card:hover {
+    background-color: var(--secondary-background);
+    /* color: var(--white); */
+    transition: all var(--transition) ease-in;
+}
+
+.cardTitle {
+    font-size: 1.8rem;
+}
+
+.cardDescription {
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+.img {
+    width: 6rem;
+}

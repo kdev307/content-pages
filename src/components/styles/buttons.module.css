@@ -4,7 +4,8 @@
 
 .button {
     font-weight: 600;
-    border: var(--border-width) solid var(--black);
+    border: 2px solid var(--black);
+    border-left: 3px solid var(--black);
     outline: 0;
     padding: 1.5rem 3rem;
     font-size: 1.5rem;

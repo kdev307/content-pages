@@ -2,14 +2,14 @@
 
 :root {
     --primary-background: #fcf1e2;
-    --secondary-background: #c0c0c0;
+    --secondary-background: #f6f3f3;
     --white: #fff;
     --black: #000;
+    --blue: #1111fa;
     --text-secondary: #8e8e8e;
     --text-accent: #d44;
     --transparent: transparent;
 
-    --border-width: 2px;
     --offset: 0.5rem;
     --transition: 0.3s;
 }
