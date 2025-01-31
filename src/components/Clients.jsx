@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import { fetchClients } from "../contentful";
 import Marquee from "react-fast-marquee";
+import clientStyles from "./styles/clients.module.css";
 
 function Clients() {
     const [clients, setClients] = useState([]);
@@ -47,8 +48,9 @@ function Clients() {
             gradient={false}
             direction="left"
             autoFill
+            className={clientStyles.clientContainer}
         >
-            <div className="clients-container" style={{ display: "flex" }}>
+            <div className={clientStyles.clients}>
                 {clients.length > 0 ? (
                     clients.map((client) => (
                         <Client key={client.id} client={client} />
@@ -63,19 +65,14 @@ function Clients() {
 
 function Client({ client }) {
     return (
-        // <div className="logo">
-        //     {client.logo ? (
-        //         <img
-        //             src={client.logo}
-        //             alt={client.name}
-        //             style={{ border: "2px solid #000" }}
-        //         />
-        //     ) : (
-        //         <p>Logo not available</p>
-        //     )}
-        //     <p>{client.name}</p>
-        // </div>
-        <></>
+        <div className={clientStyles.client}>
+            {client.logo ? (
+                <img src={client.logo} alt={client.name} />
+            ) : (
+                <p>Logo not available</p>
+            )}
+            <p>{client.name}</p>
+        </div>
     );
 }
 

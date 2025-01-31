@@ -1,0 +1,13 @@
+.clientContainer {
+    background-color: var(--black);
+    margin: auto;
+    width: 75%;
+}
+
+.clients {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+    padding: 6rem;
+}
