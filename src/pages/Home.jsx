@@ -1,4 +1,5 @@
 import AboutUs from "../components/AboutUs";
+import CaseStudy from "../components/CaseStudy";
 import Clients from "../components/Clients";
 import Features from "../components/Features";
 import Header from "../components/Header";
@@ -16,6 +17,7 @@ function Home() {
             <AboutUs />
             <Service />
             <Numbers />
+            <CaseStudy />
         </div>
     );
 }

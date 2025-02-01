@@ -91,3 +91,16 @@ export const fetchNumbers = async () => {
         return null;
     }
 };
+
+export const fetchCaseStudy = async () => {
+    try {
+        const response = await axios.get(
+            `https://cdn.contentful.com/spaces/${spaceId}/environments/master/entries?access_token=${accessToken}&content_type=caseStudy`
+        );
+        console.log("Number Response: ", response.data);
+        return response.data;
+    } catch (error) {
+        console.error("Error fetching data:", error);
+        return null;
+    }
+};
