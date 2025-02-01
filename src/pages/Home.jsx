@@ -3,6 +3,7 @@ import Clients from "../components/Clients";
 import Features from "../components/Features";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
+import Numbers from "../components/Numbers";
 import Service from "../components/Service";
 
 function Home() {
@@ -14,6 +15,7 @@ function Home() {
             <Features />
             <AboutUs />
             <Service />
+            <Numbers />
         </div>
     );
 }

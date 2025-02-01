@@ -1,0 +1,30 @@
+.container {
+    padding: 4rem 20rem;
+    background-color: var(--primary-background);
+}
+
+.dataContainer {
+    padding: 0 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.numberItem {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.number {
+    font-size: 4.8rem;
+    font-weight: 800;
+    font-family: "Manrope", monospace;
+}
+
+.title {
+    font-size: 1.5rem;
+    color: var(--text-secondary);
+    font-family: "Barlow", sans-serif;
+}
