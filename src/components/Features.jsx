@@ -28,10 +28,10 @@ function Features() {
 
     const getFeatureCards = async () => {
         try {
-            const cartData = await fetchFeatureCards();
-            if (!cartData) return;
+            const cardData = await fetchFeatureCards();
+            if (!cardData) return;
 
-            const { items, includes } = cartData;
+            const { items, includes } = cardData;
             const assets = includes?.Asset || [];
 
             const cards = items.map((item) => {
