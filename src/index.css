@@ -8,6 +8,7 @@
     --blue: #1111fa;
     --text-secondary: #8e8e8e;
     --text-accent: #d44;
+    --accent-secondary: #ff5900;
     --transparent: transparent;
 
     --offset: 0.5rem;
@@ -32,4 +33,7 @@ body {
         "Helvetica Neue", sans-serif;
     overflow-x: hidden;
     overflow-y: auto;
+}
+ul {
+    list-style: none;
 }

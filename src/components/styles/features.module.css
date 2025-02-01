@@ -30,6 +30,8 @@
 
 .slider {
     padding: 2rem;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .cards:nth-child(3n) {

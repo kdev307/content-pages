@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Aladin&family=Orbitron:wght@400..900&display=swap");
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.text {
+    font-size: 4.8rem;
+    font-weight: 700;
+    font-family: "Orbitron", monospace;
+}

@@ -15,10 +15,8 @@ function Hero() {
             const { items, includes } = data;
             const heroItem = items[0];
 
-            // Set heroData
             setHeroData(heroItem);
 
-            // Extract image from includes.Asset
             if (heroItem.fields.heroImage) {
                 const assetId = heroItem.fields.heroImage.sys.id;
                 const asset = includes?.Asset?.find(
@@ -37,7 +35,6 @@ function Hero() {
         getHeroData();
     }, []);
 
-    // Check if the data is available before rendering
     return (
         <div className={heroStyles.heroContainer}>
             <div className={heroStyles.heroText}>

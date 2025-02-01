@@ -52,3 +52,16 @@ export const fetchFeatureCards = async () => {
         return null;
     }
 };
+
+export const fetchAboutSection = async () => {
+    try {
+        const response = await axios.get(
+            `https://cdn.contentful.com/spaces/${spaceId}/environments/master/entries?access_token=${accessToken}&content_type=aboutSection`
+        );
+        console.log("About Response: ", response.data);
+        return response.data;
+    } catch (error) {
+        console.error("Error fetching data:", error);
+        return null;
+    }
+};
