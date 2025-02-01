@@ -1,0 +1,100 @@
+.container {
+    padding: 4rem 20rem;
+    text-align: center;
+    background-color: var(--white);
+}
+
+.line {
+    font-size: 1.5rem;
+    margin-top: 10rem;
+}
+
+.hr {
+    width: 70%;
+    margin: auto;
+    border: 0.2rem solid var(--black);
+    border-radius: 100rem;
+}
+
+.slider {
+    padding: 0 25rem;
+}
+
+.card {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 4rem;
+    width: 100%;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.image {
+    width: 18rem;
+    height: 24rem;
+    border: 2px solid var(--accent-secondary);
+    box-shadow: 10px 10px 0 var(--accent-secondary);
+}
+
+.text {
+    font-size: 2rem;
+    font-style: italic;
+    color: var(--black);
+    width: 40%;
+    /* margin-bottom: 1.5rem; */
+    line-height: 2.4rem;
+    letter-spacing: 0.2rem;
+    font-weight: 500;
+    font-family: "Barlow", sans-serif;
+}
+
+.name {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-top: 2rem;
+}
+
+.title {
+    font-size: 1.4rem;
+    color: var(--text-secondary);
+    font-weight: 400;
+}
+
+/* Custom Arrows */
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3.2rem;
+    cursor: pointer;
+    color: var(--text-primary);
+    transition: all 0.3s ease;
+    z-index: 10;
+    padding: 1rem;
+    border: 2px solid var(--black);
+    border-radius: 50%;
+}
+
+.prev {
+    left: 70rem;
+    top: 30rem;
+}
+
+.next {
+    right: 70rem;
+    top: 30rem;
+}
+
+.arrow:hover {
+    background-color: var(--black);
+    color: var(--white);
+}
