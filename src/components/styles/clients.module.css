@@ -1,13 +1,18 @@
-.clientContainer {
+.container {
+    padding: 6rem 30rem;
     background-color: var(--black);
+}
+
+.clientContainer {
     margin: auto;
-    width: 75%;
+    width: 100%;
 }
 
 .clients {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10rem;
-    padding: 6rem;
+    gap: 12rem;
+    padding: 2rem;
+    margin: 0 2rem;
 }

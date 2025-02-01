@@ -42,24 +42,26 @@ function Clients() {
     }, []);
 
     return (
-        <Marquee
-            speed={105}
-            pauseOnHover
-            gradient={false}
-            direction="left"
-            autoFill
-            className={clientStyles.clientContainer}
-        >
-            <div className={clientStyles.clients}>
-                {clients.length > 0 ? (
-                    clients.map((client) => (
-                        <Client key={client.id} client={client} />
-                    ))
-                ) : (
-                    <p>No clients found.</p>
-                )}
-            </div>
-        </Marquee>
+        <div className={clientStyles.container}>
+            <Marquee
+                speed={105}
+                pauseOnHover
+                gradient={false}
+                direction="left"
+                autoFill
+                className={clientStyles.clientContainer}
+            >
+                <div className={clientStyles.clients}>
+                    {clients.length > 0 ? (
+                        clients.map((client) => (
+                            <Client key={client.id} client={client} />
+                        ))
+                    ) : (
+                        <p>No clients found.</p>
+                    )}
+                </div>
+            </Marquee>
+        </div>
     );
 }
 

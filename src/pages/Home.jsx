@@ -1,6 +1,7 @@
 import AboutUs from "../components/AboutUs";
 import CaseStudy from "../components/CaseStudy";
 import Clients from "../components/Clients";
+import ContactUs from "../components/ContactUs";
 import Features from "../components/Features";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
@@ -20,6 +21,7 @@ function Home() {
             <Numbers />
             <CaseStudy />
             <Testimonials />
+            <ContactUs />
         </div>
     );
 }
