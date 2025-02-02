@@ -1,4 +1,5 @@
 import AboutUs from "../components/AboutUs";
+import Blogs from "../components/Blogs";
 import CaseStudy from "../components/CaseStudy";
 import Clients from "../components/Clients";
 import ContactUs from "../components/ContactUs";
@@ -22,6 +23,7 @@ function Home() {
             <CaseStudy />
             <Testimonials />
             <ContactUs />
+            <Blogs />
         </div>
     );
 }

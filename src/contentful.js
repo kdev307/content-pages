@@ -117,3 +117,28 @@ export const fetchTestimonials = async () => {
         return null;
     }
 };
+
+export const fetchBlogSection = async () => {
+    try {
+        const response = await axios.get(
+            `https://cdn.contentful.com/spaces/${spaceId}/environments/master/entries?access_token=${accessToken}&content_type=blogSection`
+        );
+        console.log("Number Response: ", response.data);
+        return response.data;
+    } catch (error) {
+        console.error("Error fetching data:", error);
+        return null;
+    }
+};
+export const fetchBlogs = async () => {
+    try {
+        const response = await axios.get(
+            `https://cdn.contentful.com/spaces/${spaceId}/environments/master/entries?access_token=${accessToken}&content_type=blogCards`
+        );
+        console.log("Number Response: ", response.data);
+        return response.data;
+    } catch (error) {
+        console.error("Error fetching data:", error);
+        return null;
+    }
+};

@@ -1,0 +1,129 @@
+.container {
+    padding: 4rem 20rem;
+    background-color: var(--white);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding: 0 20rem;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.slider {
+    padding: 2rem;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.tag {
+    font-size: 1.8rem;
+    color: var(--text-accent);
+}
+
+.title {
+    font-size: 3.6rem;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.card {
+    background-color: var(--white);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+    border: 2px solid var(--text-secondary);
+    border-radius: 0.1rem;
+    /* height: 30rem; */
+    width: 90%;
+    text-align: center;
+    transition: all var(--transition) ease-in;
+    margin: 1rem;
+}
+
+.card:hover {
+    border: 2px solid var(--black-dull);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.imageContainer {
+    position: relative;
+    width: 100%;
+    border-top: 2px solid var(--text-secondary);
+    border-left: 2px solid var(--text-secondary);
+    border-right: 2px solid var(--text-secondary);
+    height: 20rem;
+}
+
+.image {
+    width: 100%;
+    object-fit: cover;
+}
+
+.cardTag {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: var(--text-accent);
+    color: var(--white);
+    padding: 1.2rem;
+    font-size: 1.2rem;
+    border-radius: 0.2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.cardInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 2.4rem;
+    padding: 2rem;
+    height: 12rem;
+    width: 100%;
+    border-bottom: 2px solid var(--text-secondary);
+    border-left: 2px solid var(--text-secondary);
+    border-right: 2px solid var(--text-secondary);
+    text-align: left;
+}
+
+.cardTitle {
+    font-size: 2rem;
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    height: 4rem;
+    text-transform: capitalize;
+}
+
+.others {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+}
+
+.line,
+.learnMore {
+    font-size: 1.5rem;
+    color: var(--blue);
+}
+
+.hr {
+    width: 4rem;
+    margin: auto;
+    border: 0.1px solid var(--blue);
+}
