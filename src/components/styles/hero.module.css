@@ -4,7 +4,7 @@
     align-items: end;
     justify-content: center;
     background-color: var(--primary-background);
-    padding: 10rem 2rem 10rem 8rem;
+    padding: 10rem 0rem 10rem 20rem;
 }
 
 .heroText {
@@ -12,7 +12,7 @@
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    gap: 2rem;
+    gap: 6rem;
     padding-left: 30rem;
 }
 
@@ -21,24 +21,38 @@
     font-size: 1.5rem;
 }
 
-.heroTitleContainer {
+.heading {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     justify-content: center;
+    gap: 0rem !important;
 }
 
 .heroTitle {
     font-size: 7.2rem;
-    font-family: "Aladin", "cursive";
-    letter-spacing: 0.6rem;
-    gap: 1rem !important;
+    font-family: "Space Grotesk", "cursive";
+    /* letter-spacing: 0.4rem; */
+    line-height: 8rem;
+}
+
+.line {
+    font-size: 1.5rem;
+    margin-top: -0.7rem;
+}
+
+.hr {
+    width: 58rem;
+    margin: auto;
+    border: 0.2rem solid var(--accent-primary);
 }
 
 .heroMessage {
     font-size: 2rem;
-    width: 60%;
+    width: 70%;
     text-align: justify;
+    font-weight: 400;
+    color: var(--black);
 }
 
 .imageContainer {
@@ -51,6 +65,11 @@
 .block {
     width: 90%;
     /* height: 25%; */
-    background-color: var(--text-accent);
+    background-image: linear-gradient(
+        180deg,
+        var(--text-accent) 0% 60%,
+        var(--white) 60% 62%,
+        var(--black) 62% 100%
+    );
     padding: 6rem;
 }

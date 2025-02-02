@@ -41,49 +41,56 @@ function Hero() {
                 {heroData?.fields?.tag && (
                     <p className={heroStyles.tag}>{heroData.fields.tag}</p>
                 )}
-
-                {heroData?.fields?.heroTitle?.content ? (
-                    heroData.fields.heroTitle.content.map((node, index) =>
-                        node.nodeType === "heading-1" ? (
-                            <h1
-                                key={index}
-                                className={heroStyles.heroTitleContainer}
-                            >
-                                {node.content.map((textNode, idx) => (
-                                    <span
-                                        className={heroStyles.heroTitle}
-                                        key={idx}
-                                        style={{
-                                            fontWeight: textNode.marks?.some(
-                                                (mark) => mark.type === "bold"
-                                            )
-                                                ? "bold"
-                                                : "normal",
-                                            textDecoration:
-                                                textNode.marks?.some(
+                <div className={heroStyles.heading}>
+                    {heroData?.fields?.heroTitle?.content ? (
+                        heroData.fields.heroTitle.content.map((node, index) =>
+                            node.nodeType === "heading-1" ? (
+                                <h1
+                                    key={index}
+                                    className={heroStyles.heroTitleContainer}
+                                >
+                                    {node.content.map((textNode, idx) => (
+                                        <span
+                                            className={heroStyles.heroTitle}
+                                            key={idx}
+                                            style={{
+                                                fontWeight:
+                                                    textNode.marks?.some(
+                                                        (mark) =>
+                                                            mark.type === "bold"
+                                                    )
+                                                        ? "bold"
+                                                        : "normal",
+                                                // textDecoration:
+                                                //     textNode.marks?.some(
+                                                //         (mark) =>
+                                                //             mark.type ===
+                                                //             "underline"
+                                                //     )
+                                                //         ? "underline"
+                                                //         : "none",
+                                                color: textNode.marks?.some(
                                                     (mark) =>
                                                         mark.type ===
                                                         "underline"
                                                 )
-                                                    ? "underline"
-                                                    : "none",
-                                            color: textNode.marks?.some(
-                                                (mark) =>
-                                                    mark.type === "underline"
-                                            )
-                                                ? "#f33"
-                                                : "",
-                                        }}
-                                    >
-                                        {textNode.value}
-                                    </span>
-                                ))}
-                            </h1>
-                        ) : null
-                    )
-                ) : (
-                    <h1>Title not available</h1>
-                )}
+                                                    ? `var(--accent-primary)`
+                                                    : "",
+                                            }}
+                                        >
+                                            {textNode.value}
+                                        </span>
+                                    ))}
+                                </h1>
+                            ) : null
+                        )
+                    ) : (
+                        <h1>Title not available</h1>
+                    )}
+                    <p className={heroStyles.line}>
+                        <hr className={heroStyles.hr} />
+                    </p>
+                </div>
 
                 {heroData?.fields?.heroMessage && (
                     <p className={heroStyles.heroMessage}>

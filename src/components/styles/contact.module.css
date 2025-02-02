@@ -43,7 +43,7 @@
     font-size: 3.6rem;
     font-weight: 700;
     font-family: "Manrope", sans-serif;
-    width: 65%;
+    width: 85%;
 }
 
 .inputField,
@@ -74,17 +74,17 @@
 }
 
 .mapContainer {
-    width: 60%;
+    width: 55%;
 
     background-image: repeating-linear-gradient(
         -30deg,
-        #141313 0 2.4rem,
-        #000 2.4rem 4.8rem
+        var(--black-dull) 0 2.4rem,
+        var(--black) 2.4rem 4.8rem
     );
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 18rem;
+    padding: 15.5rem;
 }
 
 .map {
