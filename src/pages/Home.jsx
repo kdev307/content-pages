@@ -4,6 +4,7 @@ import CaseStudy from "../components/CaseStudy";
 import Clients from "../components/Clients";
 import ContactUs from "../components/ContactUs";
 import Features from "../components/Features";
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Numbers from "../components/Numbers";
@@ -24,6 +25,7 @@ function Home() {
             <Testimonials />
             <ContactUs />
             <Blogs />
+            <Footer />
         </div>
     );
 }

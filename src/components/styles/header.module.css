@@ -6,7 +6,7 @@
     padding: 2rem 4rem;
     background-color: var(--primary-background);
     /* box-shadow: 5px 5px 0 var(--white); */
-    border-bottom: 2px solid var(--black);
+    border-bottom: 2px solid var(--black-dull);
 }
 
 .navLinks {

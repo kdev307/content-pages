@@ -20,8 +20,10 @@
 
 .thankYou {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 3.2rem;
     font-weight: bold;
+    padding: 28.1rem 0;
+    font-family: "Manrope", sans-serif;
 }
 
 .form {
