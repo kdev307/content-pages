@@ -1,0 +1,201 @@
+.container {
+    /* padding: 5rem 10rem; */
+}
+
+.header {
+    padding: 8rem 20rem;
+    text-align: center;
+    /* margin-bottom: 4rem; */
+    background: var(--primary-background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.tag {
+    font-size: 1.8rem;
+    color: var(--text-accent);
+}
+
+.title {
+    font-size: 4rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: var(--black);
+    font-family: "Marlow", sans-serif;
+}
+
+.featureCards {
+    padding: 2rem 40rem 20rem 40rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    background: var(--primary-background);
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.5rem;
+}
+
+.cardImage {
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+}
+
+.cardName {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: var(--white);
+    text-align: center;
+    padding: 15rem 7rem;
+    font-weight: 600;
+    font-size: 2.4rem;
+}
+
+.mainContent {
+    display: flex;
+    gap: 10rem;
+    padding: 10rem 20rem 10rem 40rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.line {
+    font-size: 1.5rem;
+    margin: 4rem 0;
+}
+
+.hr {
+    width: 100%;
+    margin: auto;
+    border: 0.1px solid var(--text-secondary);
+}
+
+.highlight {
+    font-size: 1.5rem;
+    margin: 1rem 0 4rem 0;
+    text-align: left;
+}
+
+.highlight > .hr {
+    width: 100%;
+    margin: auto;
+    border: 0.1px solid var(--text-accent);
+}
+
+.latestArticles {
+    width: 65%;
+}
+
+.latestArticles > h2 {
+    padding: 2rem 0;
+    font-size: 3.6rem;
+    font-family: "Manrope", sans-serif;
+    font-weight: 800;
+}
+
+.sectionTitle {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.article {
+    display: flex;
+    flex-direction: row-reverse;
+
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.articleImage {
+    width: 30%;
+    height: 30rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.articleContent {
+    flex: 1;
+}
+
+.articleTitle {
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: var(--black);
+}
+
+.articleMeta,
+.postMeta {
+    font-size: 1.5rem;
+    color: var(--black);
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    gap: 2rem;
+}
+
+.articleMeta > p,
+.postMeta > p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.articleDescription {
+    font-size: 1.8rem;
+    color: var(--black);
+    padding: 1rem;
+}
+
+.readMore {
+    color: var(--black-dull);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.popularPosts {
+    width: 35%;
+}
+
+.post {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: start;
+    justify-content: center;
+    gap: 1rem;
+    margin: 4rem 0;
+}
+
+.postImage {
+    width: 11rem;
+    height: 11rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.postContent {
+    flex: 1;
+}
+
+.postTitle {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--black);
+}
+
+.postMeta {
+    font-size: 1.2rem;
+    color: var(--black-dull);
+}

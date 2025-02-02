@@ -97,7 +97,7 @@ export const fetchCaseStudy = async () => {
         const response = await axios.get(
             `https://cdn.contentful.com/spaces/${spaceId}/environments/master/entries?access_token=${accessToken}&content_type=caseStudy`
         );
-        console.log("Number Response: ", response.data);
+        console.log("case study Response: ", response.data);
         return response.data;
     } catch (error) {
         console.error("Error fetching data:", error);
@@ -110,7 +110,7 @@ export const fetchTestimonials = async () => {
         const response = await axios.get(
             `https://cdn.contentful.com/spaces/${spaceId}/environments/master/entries?access_token=${accessToken}&content_type=testimonials`
         );
-        console.log("Number Response: ", response.data);
+        console.log("testimonials Response: ", response.data);
         return response.data;
     } catch (error) {
         console.error("Error fetching data:", error);
@@ -123,7 +123,7 @@ export const fetchBlogSection = async () => {
         const response = await axios.get(
             `https://cdn.contentful.com/spaces/${spaceId}/environments/master/entries?access_token=${accessToken}&content_type=blogSection`
         );
-        console.log("Number Response: ", response.data);
+        console.log("blog section Response: ", response.data);
         return response.data;
     } catch (error) {
         console.error("Error fetching data:", error);
@@ -135,7 +135,7 @@ export const fetchBlogs = async () => {
         const response = await axios.get(
             `https://cdn.contentful.com/spaces/${spaceId}/environments/master/entries?access_token=${accessToken}&content_type=blogCards`
         );
-        console.log("Number Response: ", response.data);
+        console.log("blogs Response: ", response.data);
         return response.data;
     } catch (error) {
         console.error("Error fetching data:", error);
@@ -148,7 +148,20 @@ export const fetchFooter = async () => {
         const response = await axios.get(
             `https://cdn.contentful.com/spaces/${spaceId}/environments/master/entries?access_token=${accessToken}&content_type=footer`
         );
-        console.log("Number Response: ", response.data);
+        console.log("footer Response: ", response.data);
+        return response.data;
+    } catch (error) {
+        console.error("Error fetching data:", error);
+        return null;
+    }
+};
+
+export const fetchBlogPage = async () => {
+    try {
+        const response = await axios.get(
+            `https://cdn.contentful.com/spaces/${spaceId}/environments/master/entries?access_token=${accessToken}&content_type=blogPage`
+        );
+        console.log("blog page Response: ", response.data);
         return response.data;
     } catch (error) {
         console.error("Error fetching data:", error);

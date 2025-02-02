@@ -122,6 +122,10 @@
     color: var(--blue);
 }
 
+.learnMore {
+    cursor: pointer;
+}
+
 .hr {
     width: 4rem;
     margin: auto;
